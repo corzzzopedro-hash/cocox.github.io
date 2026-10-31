@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de equipo y mobiliario para clínicas, consultorios y unidades de salud. COCOX, Xicotepec de Juárez, Puebla.">
+  <meta name="theme-color" content="#123c3a">
+  <title>COCOX | Equipo para clínicas y hospitales</title>
+  <style>
+    :root{--ink:#163a39;--muted:#627674;--green:#176b60;--mint:#e7f1ed;--cream:#f7f7f2;--line:#dce6e1;--white:#fff;--gold:#dcaa58}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}.topbar{background:#103432;color:white;padding:12px max(22px,calc((100% - 1180px)/2));display:flex;justify-content:space-between;gap:16px;font-size:.88rem}.topbar a{text-decoration:none}
+    header{background:linear-gradient(120deg,#123c3a,#1c6257);color:white;padding:30px max(22px,calc((100% - 1180px)/2)) 78px;position:relative;overflow:hidden}
+    header:after{content:"";position:absolute;width:400px;height:400px;border:1px solid #ffffff24;border-radius:50%;right:-90px;top:-180px;box-shadow:0 0 0 38px #ffffff0b,0 0 0 78px #ffffff08}
+    nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}.brand{display:flex;gap:12px;align-items:center;color:white;text-decoration:none}.brandmark{width:44px;height:44px;border-radius:14px;background:#e9f2ec;color:var(--green);display:grid;place-items:center;font-weight:900;font-size:1.1rem}.brand strong{display:block;letter-spacing:.14em;font-size:1.12rem}.brand small{display:block;color:#d0e2dc;font-size:.68rem;letter-spacing:.1em}.navlinks{display:flex;gap:24px;align-items:center}.navlinks a{text-decoration:none;font-size:.92rem}.navlinks .nav-cta{border:1px solid #ffffff70;border-radius:999px;padding:9px 15px}
+    .hero{max-width:760px;padding-top:62px;position:relative;z-index:1}.eyebrow{font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;color:#c5ddd2;font-weight:700}.hero h1{font-size:clamp(2.35rem,5.5vw,4.6rem);line-height:1.04;letter-spacing:-.045em;margin:13px 0 18px;max-width:740px}.hero p{color:#d5e5df;max-width:600px;font-size:1.08rem;margin:0 0 26px}.button{display:inline-flex;align-items:center;gap:9px;background:#f2c879;color:#183a34;text-decoration:none;font-weight:750;padding:13px 19px;border-radius:999px;box-shadow:0 8px 24px #092b2828}.hero-note{display:inline-block;margin-left:14px;color:#d5e5df;font-size:.9rem}
+    main{max-width:1180px;padding:0 22px;margin:-42px auto 0;position:relative;z-index:2}.stats{background:white;border:1px solid var(--line);border-radius:18px;padding:19px 24px;display:flex;justify-content:space-between;align-items:center;gap:18px;box-shadow:0 12px 34px #1c43330b}.stats strong{font-size:1.45rem}.stats span{color:var(--muted);font-size:.9rem}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:58px 0 22px}.section-head h2{margin:5px 0 0;font-size:clamp(1.8rem,3vw,2.45rem);letter-spacing:-.035em}.section-head p{margin:0;color:var(--muted);max-width:460px}.kicker{font-size:.74rem;letter-spacing:.14em;color:var(--green);text-transform:uppercase;font-weight:800}
+    .controls{display:grid;grid-template-columns:minmax(220px,1fr) minmax(210px,280px);gap:12px;margin-bottom:16px}.searchbox,.selectbox{height:50px;background:white;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;padding:0 15px;gap:10px}.searchbox input,.selectbox select{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:inherit}.selectbox select{cursor:pointer}.resultline{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.88rem;margin:14px 2px 18px}.resultline button{border:0;background:none;color:var(--green);font:inherit;font-weight:700;cursor:pointer}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{min-height:91px;background:white;border:1px solid var(--line);border-radius:13px;padding:17px 17px;display:flex;align-items:center;gap:13px;transition:transform .18s,border-color .18s,box-shadow .18s}.card:hover{transform:translateY(-2px);border-color:#a7c6b9;box-shadow:0 8px 20px #163a390c}.card-icon{width:38px;height:38px;border-radius:12px;background:var(--mint);flex:0 0 38px;display:grid;place-items:center;color:var(--green);font-weight:800}.card h3{font-size:.96rem;line-height:1.3;margin:0;font-weight:690}.empty{grid-column:1/-1;padding:50px;text-align:center;color:var(--muted);background:white;border:1px dashed var(--line);border-radius:14px}
+    .about{margin:68px 0 0;background:#eaf2ee;border-radius:22px;padding:34px;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}.about h2{margin:7px 0 12px;font-size:2rem;line-height:1.15;letter-spacing:-.03em}.about p{margin:0;color:#526a66}.about-box{background:white;border:1px solid #dce8e1;border-radius:15px;padding:21px}.about-box strong{display:block;margin-bottom:7px}.about-box p{font-size:.92rem}.contact{margin:68px 0 54px;background:#123c3a;color:white;border-radius:22px;padding:37px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:2rem;line-height:1.1;margin:8px 0}.contact p{margin:0;color:#d0e2dc}.contact-right{display:flex;flex-direction:column;gap:10px;min-width:245px}.contact-right a{border:1px solid #ffffff46;padding:11px 14px;text-decoration:none;border-radius:11px;font-weight:650}.contact-right a:hover{background:#ffffff12}.contact-right .address{color:#d0e2dc;font-size:.84rem;line-height:1.4;margin-top:3px}
+    footer{border-top:1px solid var(--line);max-width:1180px;margin:auto;padding:22px;color:var(--muted);font-size:.83rem;display:flex;justify-content:space-between;gap:16px}.mobile-call{display:none}
+    @media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.contact-right{width:100%}}
+    @media(max-width:560px){.topbar{justify-content:center}.topbar span:first-child,.navlinks a:not(.nav-cta){display:none}.navlinks .nav-cta{padding:8px 12px;font-size:.83rem}.hero{padding-top:46px}.hero-note{display:block;margin:13px 0 0}.stats{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column;padding-top:44px}.controls{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card{min-height:75px}.about,.contact{padding:25px}.contact h2{font-size:1.75rem}footer{flex-direction:column}.mobile-call{display:block;position:fixed;bottom:13px;right:13px;z-index:5;background:#176b60;color:white;text-decoration:none;padding:12px 17px;border-radius:999px;box-shadow:0 7px 22px #0003;font-weight:750}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><span>Equipo y mobiliario para espacios de salud</span><span>Xicotepec de Juárez, Puebla · <a href="tel:+527751634263">775 163 42 63</a></span></div>
+  <header>
+    <nav>
+      <a class="brand" href="#inicio" aria-label="COCOX, inicio"><span class="brandmark">CX</span><span><strong>COCOX</strong><small>EQUIPAMIENTO CLÍNICO</small></span></a>
+      <div class="navlinks"><a href="#catalogo">Catálogo</a><a href="#nosotros">Quiénes somos</a><a class="nav-cta" href="#contacto">Contactar</a></div>
+    </nav>
+    <div class="hero" id="inicio">
+      <div class="eyebrow">Soluciones para clínicas y consultorios</div>
+      <h1>Equipamiento que acompaña el cuidado.</h1>
+      <p>Encuentra equipo y mobiliario para tu espacio de salud. Explora el catálogo y llámanos para consultar disponibilidad, características y cotizaciones.</p>
+      <a class="button" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a><span class="hero-note">Atención cercana y asesoría personalizada</span>
+    </div>
+  </header>
+  <main>
+    <div class="stats"><div><strong id="total-count">—</strong> <span>opciones en el catálogo</span></div><span>Encuentra opciones por nombre o categoría</span></div>
+    <section id="catalogo" aria-labelledby="catalog-title">
+      <div class="section-head"><div><div class="kicker">Catálogo COCOX</div><h2 id="catalog-title">Explora nuestra oferta</h2></div><p>La selección y disponibilidad se confirman al solicitar tu cotización.</p></div>
+      <div class="controls">
+        <label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar producto…" aria-label="Buscar producto"></label>
+        <label class="selectbox"><span aria-hidden="true">☷</span><select id="category" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option></select></label>
+      </div>
+      <div class="resultline"><span id="result-count" aria-live="polite"></span><button id="clear" type="button">Limpiar filtros</button></div>
+      <div class="grid" id="product-grid"></div>
+    </section>
+    <section class="about" id="nosotros">
+      <div><div class="kicker">Quiénes somos</div><h2>Un aliado para equipar tu espacio de salud.</h2><p>COCOX ofrece equipo y mobiliario para clínicas, consultorios y unidades de salud, con opciones funcionales y atención profesional para ayudarte a encontrar lo que necesitas.</p></div>
+      <div class="about-box"><strong>¿Buscas algo en particular?</strong><p>Cuéntanos qué necesitas y te orientamos sobre alternativas, características y cotización.</p></div>
+    </section>
+    <section class="contact" id="contacto">
+      <div><div class="eyebrow">Estamos para ayudarte</div><h2>Hablemos de tu proyecto.</h2><p>Llámanos para consultar productos y solicitar una cotización.</p></div>
+      <div class="contact-right"><a href="tel:+527751634263">Llamar al 775 163 42 63</a><a href="tel:+527641037809">Llamar al 764 103 78 09</a><div class="address">Boulevard Benito Juárez 238<br>Xicotepec de Juárez, Puebla</div></div>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> COCOX · Comercializadora y Constructora Xicotepetl S.A. de C.V.</span><span>Catálogo informativo. Consulta disponibilidad con el proveedor.</span></footer>
+  <a class="mobile-call" href="tel:+527751634263">☎ Llamar</a>
+  <script>
+    const categories = [
+      {name:"Atención a la persona", products:["Estetoscopio","Estuche de diagnóstico","Baumanómetro (aneroide y digital)","Esfigmomanómetro aneroide de pedestal","Oxímetro de pulso","Termómetro","Glucómetro","Martillo de reflejos o tipo Buck","Mesa de exploración universal","Negatoscopio"]},
+      {name:"Atención a la mujer, embarazo y lactancia", products:["Fono detector de latidos fetales","Estetoscopio Pinard","Mesa obstétrica para parto humanizado","Silla para parto vertical","Ultrasonido","Sillón de lactancia","Cojín para lactancia materna","Bola kinética"]},
+      {name:"Atención a menores", products:["Mesa de exploración pediátrica","Cuna de calor radiante","Báscula para bebé","Infantómetro"]},
+      {name:"Instrumental", products:["Set instrumental para asepsia","Set instrumental para atención de parto","Esterilizador de vapor autogenerado de mesa","Set instrumental para curación","Set instrumental para revisión uterina","Porta abatelenguas","Torundero"]},
+      {name:"Mobiliario y equipo clínico", products:["Báscula con estadímetro","Estadímetro de pared","Escritorio","Silla secretarial","Sillas","Bancas tándem","Banco giratorio","Banco de altura","Escalerilla de 3 peldaños","Lavabo Pasteur","Mesa Pasteur","Mesa Mayo","Archiveros","Estante para guarda estéril","Vitrinas","Anaquel para cargas pesadas","Bote sanitario con pedal","Recipiente para basura","Cubeta rodable","Extinguidor"]},
+      {name:"Equipo tecnológico e informático", products:["Computadoras","Impresora multifuncional","Proyectores","Regulador de voltaje con batería de respaldo","Cámaras de vigilancia","Electrocardiógrafo digital portátil"]},
+      {name:"Promoción de la salud", products:["Porta rotafolio","Pizarrón","Pantalla de 25 a 55 pulgadas","Soporte para televisión","Bocinas","Megáfono"]},
+      {name:"Espacios interiores y exteriores", products:["Cortinas plegables antibacterianas","Botiquín","Señalización de emergencia","Tinaco","Señalética en braille","Estación para cambio de pañales","Extractores de aire","Buzón","Ventiladores","Luminarias exteriores","Luminarias interiores","Termómetros ambientales","Dispensador de gel antibacterial automático","Despachador automático de jabón","Reloj de pared","Salvaescaleras","Plantas de luz de emergencia","Estación de hidratación"]},
+      {name:"Equipo auxiliar", products:["Sillas de ruedas","Termo para transporte y conservación de vacunas","Camillas","Equipos de primeros auxilios","Recipiente rígido para punzocortantes","Mesa plegable portátil","Silla para toma de muestras","Cubeta, cesto o soporte para residuos peligrosos biológico-infecciosos","Báscula digital corporal","Cinta métrica","Tablet de 12.6 pulgadas"]},
+      {name:"Medicina integrativa y tradicional", products:["Balanza de precisión","Molino manual","Frascos y otros insumos para medicina tradicional","Kit básico de masaje","Camillas o bancos de masaje","Compresas de gel frío/calor","Tamizador de líquidos","Mochila aspersor para fumigación","Morteros y pistilos","Kit de jardinería","Extractores o infusores","Manguera de 50 metros","Tazas y recipientes para infusiones","Carretilla","Tinaco cisterna de 50,000 L","Kits con ventosas","Deshidratador solar","Juego de ollas de acero inoxidable","Alambique de acero inoxidable para extracción de aceites","Estantes o gabinetes para organizar hierbas, frascos y otros insumos"]},
+      {name:"Salud mental y adicciones", products:["Simulador de bebé con efectos de consumo","Gafas de simulación del consumo"]},
+      {name:"Salud bucal", products:["Unidad completa de estomatología","Compresor libre de aceite"]},
+      {name:"Equipo de conservación", products:["Refrigerador con congelador para área de toma de muestras","Refrigerador para área de toma de muestras","Congelador para área de toma de muestras"]},
+      {name:"Proyectos de infraestructura", products:["Pintura con nueva imagen","Impermeabilización","Instalaciones eléctricas","Conectividad y telecomunicaciones","Antena de internet satelital para conectividad rural","Módem satelital","Fuente de alimentación (panel solar)","Estructura de montaje","Cintas antideslizantes para escaleras","Instalaciones sanitarias","Red de desagüe y ventilación sanitaria","Conexión a fosa séptica o red municipal","Trampas, coladeras y registros sanitarios","Muebles de baños y accesorios","Instalaciones hidráulicas","Red hidráulica interior y exterior","Tinacos, cisternas y/o aljibes","Sistema de captación de agua pluvial","Acabados","Pisos resistentes antiderrapantes y lavables","Aplanados y recubrimientos en muros y plafones","Pintura para interiores y exteriores","Plafones falsos","Ventilación y aire acondicionado","Equipos tipo minisplit","Ductería, rejillas y controles","Techumbre y exteriores","Bardas perimetrales","Puertas","Zaguanes","Rejas","Mallas de protección","Barras de apoyo para sanitarios y escaleras","Guías para personas con discapacidad visual"]}
+    ];
+    const allProducts=categories.flatMap(category=>category.products.map(name=>({name,category:category.name})));
+    const grid=document.getElementById('product-grid'), search=document.getElementById('search'), category=document.getElementById('category');
+    const norm=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es');
+    categories.forEach(item=>{const option=document.createElement('option');option.value=item.name;option.textContent=item.name;category.append(option)});
+    function render(){const query=norm(search.value.trim()), selected=category.value;const matches=allProducts.filter(item=>(!selected||item.category===selected)&&(!query||norm(item.name+' '+item.category).includes(query)));document.getElementById('result-count').textContent=`Mostrando ${matches.length} de ${allProducts.length} productos`;grid.replaceChildren();if(!matches.length){const empty=document.createElement('div');empty.className='empty';empty.textContent='No encontramos productos con esa búsqueda. Prueba con otro nombre o categoría.';grid.append(empty);return}const fragment=document.createDocumentFragment();matches.forEach(item=>{const card=document.createElement('article');card.className='card';const icon=document.createElement('span');icon.className='card-icon';icon.setAttribute('aria-hidden','true');icon.textContent='+';const body=document.createElement('div');const title=document.createElement('h3');title.textContent=item.name;body.append(title);card.append(icon,body);card.title=item.category;fragment.append(card)});grid.append(fragment)}
+    search.addEventListener('input',render);category.addEventListener('change',render);document.getElementById('clear').addEventListener('click',()=>{search.value='';category.value='';render();search.focus()});document.getElementById('total-count').textContent=allProducts.length;document.getElementById('year').textContent=new Date().getFullYear();render();
+  </script>
+</body>
+</html>
